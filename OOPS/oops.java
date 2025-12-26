@@ -8,16 +8,34 @@ public class oops{
 
         p1.tip = 6;
         System.out.println(p1.tip);
+
+        // BankAccount myAcc = new BankAccount();
+        // myAcc.username = "aditya";
+        // myAcc.setPassword("asdf");
+
+
     }
 }
 
-class bankAccount{
-    
-}
+// class BankAccount{
+//     public String username;
+//     private String password;
+//     public void setPassword(String pass){
+//         password = pass;
+//     }
+// }
 
 class Pen{
     String color;
     int tip;
+
+    String getColor(){
+        return this.color;
+    }
+
+    int getTip(){
+        return this.tip;
+    }
 
     void setColor(String newColor){
         color = newColor;
@@ -26,14 +44,16 @@ class Pen{
     void setTip(int newTip){
         tip = newTip;
     }
+
+
 }
 
-class Student{
-    String name;
-    int age;
-    int percentage;
+// class Student{
+//     String name;
+//     int age;
+//     int percentage;
 
-    void calcPercentage(int phy, int chem, int math){
-        percentage = (phy+chem+math) / 3;
-    }
-}
+//     void calcPercentage(int phy, int chem, int math){
+//         percentage = (phy+chem+math) / 3;
+//     }
+// }
