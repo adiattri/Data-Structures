@@ -57,6 +57,7 @@ class Pen{
 class Student{
     String name;
     int roll;
+    int marks[];
     //copy constructors
     Student(Student s1){
         this.name = s1.name;
