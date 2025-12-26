@@ -9,6 +9,12 @@ public class oops{
         p1.tip = 6;
         System.out.println(p1.tip);
 
+        Student s1 = new Student();
+        Student s2 = new Student("aditya");
+        Student s3 = new Student(5);
+        Student s4 = new Student(s2);
+
+
         // BankAccount myAcc = new BankAccount();
         // myAcc.username = "aditya";
         // myAcc.setPassword("asdf");
@@ -46,6 +52,26 @@ class Pen{
     }
 
 
+}
+
+class Student{
+    String name;
+    int roll;
+    //copy constructors
+    Student(Student s1){
+        this.name = s1.name;
+        this.roll = s1.roll;
+    }
+    //constructor overloading
+    Student(){
+        System.out.println("Student obect created");
+    }
+    Student(String name){
+        this.name = name;
+    }
+    Student(int roll){
+        this.roll = roll;
+    }
 }
 
 // class Student{
