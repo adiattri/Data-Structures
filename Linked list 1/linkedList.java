@@ -18,19 +18,30 @@ public class linkedList{
             head = tail = newNode;
             return;
         }
-        
-
-       
-
         //step 2 = new node next assign to head
         newNode.next = head;
 
         //step 3 = point head to new node
         head = newNode;
     }
+
+    public void addLast(int data){
+        Node newNode = new Node(data);
+        if(head == null){
+            head = tail = newNode;
+            return;
+        }
+        tail.next = newNode;
+        tail = newNode;
+    }
     public static void main(String[] args) {
         linkedList ll = new linkedList();
-        ll.head = new Node(1);
-        ll.head.next = new Node(2);
+        ll.addFirst(1);
+        ll.addFirst(2);
+        ll.addLast(2);
+        ll.addLast(2);
+
+
+
     }
 }
